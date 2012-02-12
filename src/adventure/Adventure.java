@@ -49,6 +49,11 @@ public class Adventure extends JComponent implements KeyListener {
         } else if (ke.getKeyCode() == KeyEvent.VK_DOWN) {
             p.comeForward();
         }
+        Room nextRoom = currentRoom.checkIfPlayerIsExiting(p);
+        if (nextRoom != null) {
+            currentRoom = nextRoom;
+            p.x = 400;
+        }
         repaint();
     }
 

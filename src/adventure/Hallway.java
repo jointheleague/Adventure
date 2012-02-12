@@ -3,22 +3,19 @@ package adventure;
 import java.awt.Color;
 import java.awt.Graphics;
 
-class Kitchen implements Room {
+class Hallway implements Room {
 
-    public Kitchen() {
+    public Hallway() {
     }
 
     @Override
     public void paint(Graphics g) {
-        g.setColor(Color.blue.brighter());
+        g.setColor(Color.green.darker());
         g.fillRect(0, 0, 800, 600);
     }
 
     @Override
     public Room checkIfPlayerIsExiting(Player p) {
-        if (p.x < 0) {
-            return new Hallway();
-        }
         return null;
     }
     

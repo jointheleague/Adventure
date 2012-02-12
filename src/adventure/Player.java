@@ -5,7 +5,7 @@ import java.awt.Graphics;
 
 class Player {
 
-    private int x = 400;
+    public int x = 400;
     private int y = 300;
     private int w = 50;
     private int h = 100;
