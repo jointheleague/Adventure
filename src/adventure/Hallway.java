@@ -15,8 +15,13 @@ class Hallway implements Room {
     }
 
     @Override
-    public Room checkIfPlayerIsExiting(Player p) {
+    public Room exitWest() {
         return null;
+    }
+
+    @Override 
+    public Room exitEast() {
+        return new Kitchen();
     }
     
 }

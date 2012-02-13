@@ -15,10 +15,12 @@ class Kitchen implements Room {
     }
 
     @Override
-    public Room checkIfPlayerIsExiting(Player p) {
-        if (p.x < 0) {
-            return new Hallway();
-        }
+    public Room exitWest() {
+        return new Hallway();
+    }
+
+    @Override
+    public Room exitEast() {
         return null;
     }
     

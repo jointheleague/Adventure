@@ -6,6 +6,8 @@ interface Room {
 
     public void paint(Graphics g);
 
-    public Room checkIfPlayerIsExiting(Player p);
+    public Room exitWest();
+
+    public Room exitEast();
     
 }
